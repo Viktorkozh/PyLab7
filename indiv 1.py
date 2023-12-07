@@ -14,8 +14,10 @@ if __name__ == '__main__':
 
     # найти искомую сумму.
     S = 0
+    cnt = 0
     for item in A:
         if item % 2 == 0:
             S += item
+            cnt += 1
 
-    print(S)
+    print(S, cnt)
