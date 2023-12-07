@@ -25,9 +25,7 @@ if __name__ == '__main__':
             a_modified.insert(0, poped)
 
     a_cut = a[i_zero + 1:]
-    S = 0
-    for item in a_cut:
-        S += item
+    S = sum([item for item in a_cut])
 
     print("Kоличество положительных элементов списка: ", count)
     print("Cуммa элементов списка, расположенных после"

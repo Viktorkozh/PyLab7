@@ -12,12 +12,9 @@ if __name__ == '__main__':
         print("Неверный размер списка", file=sys.stderr)
         exit(1)
 
-    # найти искомую сумму.
-    S = 0
-    cnt = 0
-    for item in A:
-        if item % 2 == 0:
-            S += item
-            cnt += 1
+    S = [item for item in A if item % 2 == 0]
+    cnt = len(S)
+    ans = sum(S)
 
-    print(S, cnt)
+    print("Сумма элементов кратных 2:", ans,
+          "\nКоличество элементов кратных 2:", cnt)
